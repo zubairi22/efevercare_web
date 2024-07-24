@@ -8,6 +8,7 @@ import DropdownLink from '@/Components/DropdownLink.vue';
 import SidebarSingleMenu from "@/Components/SidebarSingleMenu.vue";
 import SidebarMultiMenu from "@/Components/SidebarMultiMenu.vue";
 import * as HeroIcons from '@heroicons/vue/24/outline'
+import BlankButton from "@/Components/BlankButton.vue";
 
 defineProps({
     title: String,
@@ -77,6 +78,9 @@ onMounted(() => {
                         </Link>
                     </div>
                     <div class="flex sm:items-center sm:ms-6">
+                        <div class="ms-3 relative hidden md:block">
+                            <BlankButton href="/efevercare.apk"> Download </BlankButton>
+                        </div>
                         <!-- Settings Dropdown -->
                         <div class="ms-3 relative">
                             <Dropdown align="right" width="48">
